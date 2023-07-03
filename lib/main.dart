@@ -82,7 +82,8 @@ class _TaskListScreenState extends State<TaskListScreen> {
               TextField(
                 controller: dateField,
                 decoration: InputDecoration(
-                  labelText: 'Select Date',
+                  labelText: 'Select Deadline',
+                  hintText: 'Pick Date',
                 ),
                 onTap: () async {
                   final DateTime? picked = await showDatePicker(
